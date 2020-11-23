@@ -213,5 +213,24 @@
     "printEngine": "pprint",
     "width": 120
   },
-  "calva.paredit.defaultKeyMap": "original"
+  "calva.paredit.defaultKeyMap": "original",
+  "git.autofetch": true,
+  "remote.SSH.logLevel": "trace",
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "imac.warmdot.net": "macOS",
+    "mini.warmdot.net": "linux",
+    "mini": "linux"
+  },
+  "cSpell.enableFiletypes": [
+    "!clojure"
+  ],
+  "workbench.editor.showTabs": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

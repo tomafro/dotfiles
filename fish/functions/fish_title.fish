@@ -8,10 +8,13 @@ function fish_title
       echo "$argv[1]"
     end
   else
+    set branch (git branch --show-current)
+    set full_repo "$repo:$branch"
+
     if [ "$argv[1]" = "" ]
-      echo $repo
+      echo "$full_repo"
     else
-      echo "$argv[1] ($repo)"
+      echo "$argv[1] ($full_repo)"
     end
   end
 end

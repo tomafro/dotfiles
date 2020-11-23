@@ -24,3 +24,4 @@ abbr --add ssh '/usr/bin/ssh -A'
 if not ssh-add -l | grep -q $keyName
   ssh-add -KA
 end
+
