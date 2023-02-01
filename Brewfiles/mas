@@ -1,0 +1,7 @@
+brew "mas"
+
+mas "Xcode", id: 497799835
+mas "TailScale", id: 1475387142
+mas "Fantastical", id: 975937182
+mas "Todoist", id: 585829637
+mas "Hidden Bar", id: 1452453066

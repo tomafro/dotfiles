@@ -1,0 +1,17 @@
+.vscode
+.DS\_Store
+.svn
+*.sqlite3
+XX106-5TY6
+/.bundle
+/.tags
+/.tags_sorted_by_file
+/*.sublime*
+/.sync
+/node_modules
+/dotfiles/bundle/cache/compact_index/*
+/.target
+.warmdot
+*.local.*
+.envrc
+.cpcache

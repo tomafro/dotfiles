@@ -1,0 +1,30 @@
+brew "fish" # The best shell
+brew "coreutils"
+brew "readline"
+brew "curl"
+brew "wget"
+brew "httpie"
+brew "git"
+brew "hub"
+brew "ripgrep"
+brew "fzf"
+brew "bats-core"
+brew "ctags"
+brew "jq"   # JSON pretty-printer and processor
+brew "tree" # Displays directories as trees in the terminal
+brew "peco" # Interactive filtering tool. See: https://peco.github.io/#demo
+brew "duti" # Helps select default applications for document types on OS X
+brew "ag"
+brew "mycli"
+brew "htop"
+brew "bat"
+brew "fd"
+brew "tldr"
+brew "ncdu"
+brew "gh"
+
+brew "asdf"
+brew "direnv"
+
+brew "nginx"
+brew "postgresql@15"

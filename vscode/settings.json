@@ -1,0 +1,246 @@
+{
+  "files.exclude": {
+    "target/*": true,
+    "**/.bundle": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/log": true,
+    "**/node_modules": true,
+    "**/tmp": true,
+    "public/assets/**": true
+  },
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.bundle": true,
+    "**/node_modules": true,
+    "**/tmp": true,
+    "**/log": true,
+    "public/assets/**": true,
+    "dummy/path/to/test/**": true
+  },
+  "editor.fontSize": 15,
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "off",
+  "editor.useTabStops": true,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "Monaco",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#002231",
+    "titleBar.activeForeground": "#ffffff",
+    "activityBar.background": "#002231",
+    "statusBar.background": "#002231",
+    "editor.foreground": "#ffffff",
+    "editor.background": "#00131b",
+    "sideBar.background": "#00131b",
+    "sideBar.border": "#001b27",
+    "sideBarSectionHeader.background": "#00131b",
+    "list.activeSelectionBackground": "#002231",
+    "list.inactiveSelectionBackground": "#002231",
+    "tab.activeBackground": "#00131b",
+    "tab.inactiveBackground": "#002231",
+    "editorGroup.border": "#001b27",
+    "editor.lineHighlightBackground": "#001b27",
+    "activityBarBadge.background": "#a33",
+    "sideBarTitle.foreground": "#bbbbbb",
+    "input.foreground": "#ffffff",
+    "input.background": "#001b27",
+    "input.placeholderForeground": "#aabbcc"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "entity.name",
+          "punctuation"
+        ],
+        "settings": {
+          "foreground": "#ffffff"
+        }
+      },
+      {
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#aaaaaa"
+        }
+      },
+      {
+        "scope": [
+          "string",
+          "punctuation.definition.string.begin",
+          "punctuation.definition.string.end",
+          "punctuation.support.type.property-name",
+          "support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#f8d2a1"
+        }
+      },
+      {
+        "scope": [
+          "constant",
+          "constant.numeric",
+          "constant.language",
+          "punctuation.definition.constant"
+        ],
+        "settings": {
+          "foreground": "#afe0da"
+        }
+      },
+      {
+        "scope": [
+          "keyword",
+          "keyword.control",
+          "storage.control",
+          "storage.modifier"
+        ],
+        "settings": {
+          "foreground": "#afe0da"
+        }
+      },
+    ]
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "explorer.confirmDragAndDrop": false,
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+  "cSpell.language": "en,en-GB",
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "clojure",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
+  "git.inputValidation": "off",
+  "[git-commit]": {
+    "editor.rulers": [
+      80
+    ]
+  },
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "window.restoreWindows": "none",
+  "workbench.colorTheme": "Visual Studio Dark",
+  "files.associations": {
+    "Brewfile": "ruby",
+    "*.mustache": "html"
+  },
+  "editor.fontLigatures": true,
+  "window.closeWhenEmpty": true,
+  "extensions.autoUpdate": false,
+  "cSpell.userWords": [
+    "blitzlicht",
+    "defn",
+    "farillio",
+    "figwheel",
+    "httpq",
+    "rerendering",
+    "serializer"
+  ],
+  "rust.all_features": true,
+  "rust-client.logToFile": true,
+  "todo.file.name": "*.todos",
+  "bracket-pair-colorizer-2.colors": [
+    "#ffffff",
+    "#f8d2a1",
+    "#afe0da",
+  ],
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "cSpell.enabled": false,
+  "calva.fmt.formatAsYouType": false,
+  "calva.highlight.bracketColors": [
+    "#FFFF00",
+    "#FF9AA2",
+    "#FFB7B2",
+    "#FFDAC1",
+    "#E2F0CB",
+    "#B5EAD7",
+    "#C7CEEA",
+    "#B5EAD7",
+    "#E2F0CB",
+    "#FFDAC1",
+    "#FFB7B2",
+    "#FF9AA2"
+  ],
+  "task.autoDetect": "off",
+  "calva.prettyPrintingOptions": {
+    "enabled": false,
+    "printEngine": "pprint",
+    "width": 120
+  },
+  "calva.paredit.defaultKeyMap": "original",
+  "git.autofetch": true,
+  "remote.SSH.logLevel": "trace",
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "imac.warmdot.net": "macOS",
+    "mini.warmdot.net": "linux",
+    "mini": "linux"
+  },
+  "cSpell.enableFiletypes": [
+    "!clojure"
+  ],
+  "workbench.editor.showTabs": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "git-rebase-todo"
+    }
+  ],
+  "editor.minimap.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.inlineSuggest.enabled": true
+}

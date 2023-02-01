@@ -1,0 +1,47 @@
+puts "Loading #{__FILE__}"
+
+GIT_URL=`git remote get-url origin > /dev/null 2>&1 && git remote get-url origin`.presence
+
+def sql(query)
+  ActiveRecord::Base.connection.select_all(query)
+end
+
+def define_haystack_helpers
+  def victor
+    Identity.joins(:users).find_by(users: { first_name: "Victor", last_name: "Cooper" })
+  end
+
+  def victor_work
+    Contact.find_by(email_address: 'victor@haystack-staging.com')
+  end
+end
+
+
+def define_bc3_helpers
+  def victor
+    Person.find(victor_id)
+  end
+
+  def victor_id
+    @victor_id ||= Person.all.detect {|p| p.name.starts_with?("Victor") }.id
+  end
+
+  def cheryl
+    Person.find(cheryl_id)
+  end
+
+  def cheryl_id
+    @cheryl_id ||= Person.all.detect {|p| p.name.starts_with?("Cheryl") }.id
+  end
+end
+
+case GIT_URL
+  when /basecamp\/haystack/ then define_haystack_helpers
+  when /basecamp\/bc3/      then define_bc3_helpers
+end
+
+projectrc = File.expand_path('config/.projectrc')
+if File.exist?(projectrc)
+  puts "Loading #{projectrc}"
+  load projectrc
+end

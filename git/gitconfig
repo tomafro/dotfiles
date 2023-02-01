@@ -1,0 +1,38 @@
+[user]
+	name = Tom Ward
+	email = tom@popdog.net
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[alias]
+  squash = rebase --interactive
+  co = checkout
+  aa = add -A
+  st = status
+[push]
+	default = current
+[diff]
+	wordregex = [[:alnum:]]+|[^[:space:]]
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[credential]
+	helper = osxkeychain
+[rebase]
+	autostash = true
+[commit]
+	verbose = true
+[pull]
+	rebase = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/Code/farillio/"]
+  path = ~/Code/farillio/.gitconfig

@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+if test ! $(which brew); then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+ask_for_sudo() {
+  echo "Asking for administrator password up-front"
+  sudo -v &> /dev/null
+
+  # Update existing `sudo` time stamp
+  # until this script has finished.
+  #
+  # https://gist.github.com/cowboy/3118588
+
+  # Keep-alive: update existing `sudo` time stamp until script has finished
+  while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+  echo "Password cached"
+}
+
+ask_for_sudo
+
+if test ! "$(brew ls git)"; then
+  brew install git
+fi
+
+printf "url=https://github.com" | git -c "credential.helper=osxkeychain" credential fill | git -c "credential.helper=osxkeychain" credential approve
+
+brew tap Homebrew/bundle
+cat Brewfiles/* | brew bundle install --no-upgrade --file=-
+
+mkdir -p $HOME/.config/fish
+ln -nFs $HOME/Dotfiles/fish/config.fish $HOME/.config/fish/config.fish
+ln -nFs $HOME/Dotfiles/fish/functions   $HOME/.config/fish/functions
+ln -nFs $HOME/Dotfiles/fish/completions $HOME/.config/fish/completions
+ln -nFs $HOME/Dotfiles/fish/conf.d      $HOME/.config/fish/conf.d
+
+shell="$(which fish)"
+echo $shell
+
+if test ! $(grep $shell /etc/shells); then
+  sudo bash -c "echo $shell >> /etc/shells"
+fi
+
+if [[ ! $SHELL = $shell ]]; then
+  chsh -s $shell
+fi
+
+dotfilesInstall=true fish

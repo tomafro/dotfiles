@@ -1,0 +1,6 @@
+complete --command 'flashlight' --no-files --long-option 'tail'
+complete --command 'flashlight' --no-files --long-option 'web'
+complete --command 'flashlight' --no-files --long-option 'cable'
+complete --command 'flashlight' --no-files --long-option 'jobs'
+complete --command 'flashlight' --no-files --long-option 'assets'
+complete --command 'flashlight' --no-files --long-option 'log'
