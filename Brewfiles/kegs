@@ -21,10 +21,12 @@ brew "bat"
 brew "fd"
 brew "tldr"
 brew "ncdu"
-brew "gh"
 
 brew "asdf"
 brew "direnv"
 
 brew "nginx"
 brew "postgresql@15"
+
+brew "gh"
+brew "buildkite/buildkite/buildkite-cli"

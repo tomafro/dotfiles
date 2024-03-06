@@ -17,7 +17,7 @@ if dotfiles-is-installing
   # __vscode_install_extension streetsidesoftware.code-spell-checker
   # __vscode_install_extension skyapps.fish-vscode
 
-  for type in fish rb js clj go rs sh bash json xml yaml text textile md erb bats toml rake
+  for type in fish rb js clj go rs sh bash json xml yaml text textile md erb bats toml rake css scss less astro mdx
     duti -s com.microsoft.VSCode .{$type} all
   end
 end
@@ -26,3 +26,5 @@ set --export EDITOR "code"
 
 dotfiles-link "$DOTFILES_PATH/vscode/settings.json"    "$HOME/Library/Application Support/Code/User/settings.json"
 dotfiles-link "$DOTFILES_PATH/vscode/keybindings.json" "$HOME/Library/Application Support/Code/User/keybindings.json"
+
+fileicon test /Applications/Visual\ Studio\ Code.app/ > /dev/null || fileicon set /Applications/Visual\ Studio\ Code.app/ ~/Dotfiles/icons/vs-code-icon.png

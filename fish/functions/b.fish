@@ -1,5 +1,5 @@
 function b
-  if set -q $argv[1]
+  if not set -q argv[1]
     git checkout (git-main-branch)
   else if [ "-" = $argv[1] ]
     git checkout -

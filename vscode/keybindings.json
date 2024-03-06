@@ -15,5 +15,14 @@
   {
     "key": "cmd+t",
     "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "issue.copyGithubPermalink"
   }
 ]

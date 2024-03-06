@@ -3,6 +3,7 @@
 	email = tom@popdog.net
 [core]
 	excludesfile = ~/.gitignore
+	# pager = delta --syntax-theme 1337
 [color]
 	diff = auto
 	status = auto
