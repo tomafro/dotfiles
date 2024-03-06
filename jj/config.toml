@@ -1,0 +1,6 @@
+[user]
+name = "Tom Ward"
+email = "tom@popdog.net"
+
+[ui]
+editor = "zed --wait"
