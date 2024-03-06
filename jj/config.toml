@@ -4,3 +4,7 @@ email = "tom@popdog.net"
 
 [ui]
 editor = "zed --wait"
+default-command = "status"
+
+[ui.diff]
+tool = ["difft", "--color=always", "$left", "$right"]
