@@ -1,0 +1,8 @@
+[tools]
+usage = "latest"
+ruby = "latest"
+awscli = "latest"
+node = "latest"
+babashka = "latest"
+java = "latest"
+python = "latest"

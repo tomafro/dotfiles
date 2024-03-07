@@ -22,7 +22,7 @@ brew "fd"
 brew "tldr"
 brew "ncdu"
 
-brew "asdf"
+brew "mise"
 brew "direnv"
 
 brew "nginx"

@@ -3,4 +3,9 @@ set script_dir (dirname $script_path)
 set --export DOTFILES_PATH (realpath "$script_dir/../..")
 
 eval (/opt/homebrew/bin/brew shellenv)
-source (brew --prefix asdf)/libexec/asdf.fish
+
+if status is-interactive
+  mise activate fish | source
+else
+  mise activate fish --shims | source
+end
