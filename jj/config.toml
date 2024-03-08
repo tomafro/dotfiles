@@ -8,3 +8,7 @@ default-command = "status"
 
 [ui.diff]
 tool = ["difft", "--color=always", "$left", "$right"]
+
+[template-aliases]
+'format_timestamp(timestamp)' = 'timestamp.ago()'
+'format_short_signature(signature)' = 'signature.username()'
