@@ -23,7 +23,6 @@ brew "tldr"
 brew "ncdu"
 
 brew "mise"
-brew "direnv"
 
 brew "nginx"
 brew "postgresql@15"
